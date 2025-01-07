@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exploración Espacial</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #0b0c1b;
+                color: #ffffff;
+                overflow-x: hidden;
+            }
+            header {
+                background: rgba(0, 0, 50, 0.8);
+                padding: 20px;
+                text-align: center;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+            header h1 {
+                font-size: 36px;
+                color: #00d9ff;
+            }
+            nav {
+                margin-top: 20px;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 18px;
+            }
+            nav a:hover {
+                color: #00d9ff;
+            }
+            .hero {
+                height: 100vh;
+                background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #ffffff;
+                padding: 20px;
+            }
+            .hero h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            .hero p {
+                font-size: 20px;
+                max-width: 700px;
+            }
+            .content {
+                padding: 100px 20px;
+                background: #15172b;
+                text-align: center;
+            }
+            .content h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                color: #00d9ff;
+            }
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+            .card {
+                background: #1e1f35;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s;
+            }
+            .card:hover {
+                transform: scale(1.05);
+            }
+            .card img {
+                width: 100%;
+                border-radius: 8px;
+            }
+            .card h3 {
+                margin: 15px 0;
+                font-size: 22px;
+                color: #00d9ff;
+            }
+            footer {
+                background: rgba(0, 0, 50, 0.8);
+                padding: 20px;
+                text-align: center;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Exploración Espacial</h1>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#misiones">Misiones</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <div class="hero" id="hero">
+            <div>
+                <h2>El Universo Espera</h2>
+                <p>Desde la primera misión a la Luna hasta la exploración de Marte, la humanidad continúa empujando los límites del conocimiento y la aventura.</p>
+            </div>
+        </div>
+
+        <div class="content" id="misiones">
+            <h2>Misiones Destacadas</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250x150" alt="Apollo 11">
+                    <h3>Apollo 11</h3>
+                    <p>La misión que llevó al ser humano a la Luna por primera vez en 1969.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250x150" alt="Mars Rover">
+                    <h3>Mars Rover</h3>
+                    <p>Exploración del planeta Marte con vehículos autónomos desde 2004.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250x150" alt="James Webb Telescope">
+                    <h3>Telescopio James Webb</h3>
+                    <p>El telescopio espacial más avanzado para explorar los confines del universo.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contacto">
+            <p>© 2025 Exploración Espacial. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
